@@ -15,7 +15,8 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+//    return view('welcome');
+    return redirect('/register');
 });
 
 Route::get('/register', [UserController::class, 'create']);
